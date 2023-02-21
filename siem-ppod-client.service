@@ -1,0 +1,11 @@
+[Unit]
+Description=Custom LogRhythm Integration for ProofPoint On Demand
+
+[Service]
+User=root
+Group=root
+Type=simple
+ExecStart=/opt/siem-ppod-client/run.sh
+
+[Install]
+WantedBy=multi-user.target

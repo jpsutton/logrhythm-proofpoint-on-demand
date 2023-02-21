@@ -1,0 +1,5 @@
+[ppod_client]
+API_TOKEN=NOT_A_REAL_TOKEN
+
+[syslog_client]
+SERVER = 10.123.123.123
