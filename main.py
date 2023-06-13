@@ -29,7 +29,7 @@ def main():
         process_list.append(w_client)
 
     # Start the PPoD client to get new logs
-    p_client = Process(target=ppod_client, args=(log_queue, config['ppod_client']['API_KEY'], exit_flag))
+    p_client = Process(target=ppod_client, args=(log_queue, config['ppod_client']['API_TOKEN'], exit_flag))
     p_client.start()
     process_list.append(p_client)
 
